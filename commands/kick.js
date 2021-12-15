@@ -9,7 +9,7 @@ module.exports = {
                 memberTarget.kick();
                 message.channel.send("User has been kicked.");
             }else{
-                message.channel.send('You couldn`t kick that member.');
+                message.channel.send('You couldn`t kick that member. You specified an invaild member or something else.');
             }
         } else {
             message.channel.send('You don`t have enough permissions to execute this command.');
