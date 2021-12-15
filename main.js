@@ -44,8 +44,12 @@ client.on('message', message =>{
     //        client.commands.get('pump').execute(message, args, Discord);
     //}   else if (command === 'dump'){
     //        client.commands.get('dump').execute(message, args, Discord);
-    } else if (command === 'clear'){
-        client.commands.get('clear').execute(message, args);
+    }   else if (command === 'clear'){
+            client.commands.get('clear').execute(message, args);
+    }   else if (command === 'kick'){
+            client.commands.get('kick').execute(message, args);
+    }   else if (command === 'ban'){
+            client.commands.get('ban').execute(message, args);
     }
 });
 
