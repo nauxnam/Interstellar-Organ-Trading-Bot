@@ -34,12 +34,18 @@ client.on('message', message =>{
 
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args);
-    } else if (command === 'tradecenter'){
-        client.commands.get('tradecenter').execute(message, args);
-    }  else if (command === 'trader'){
-        client.commands.get('trader').execute(message, args);
-    }  else if (command === 'help'){
-        client.commands.get('help').execute(message, args, Discord);
+    }   else if (command === 'tradecenter'){
+            client.commands.get('tradecenter').execute(message, args);
+    }   else if (command === 'trader'){
+            client.commands.get('trader').execute(message, args);
+    }   else if (command === 'help'){
+            client.commands.get('help').execute(message, args, Discord);
+    //}   else if (command === 'pump'){
+    //        client.commands.get('pump').execute(message, args, Discord);
+    //}   else if (command === 'dump'){
+    //        client.commands.get('dump').execute(message, args, Discord);
+    } else if (command === 'clear'){
+        client.commands.get('clear').execute(message, args);
     }
 });
 
